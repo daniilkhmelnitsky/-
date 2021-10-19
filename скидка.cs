@@ -1,28 +1,20 @@
 using System;
-namespace промежуток
+namespace sale
 {
     class Program
     {
         static void Main(string[] args)
         {
-           double a, b, c;
+           double a;
            a = Convert.ToDouble(Console.ReadLine());
-           b = Convert.ToDouble(Console.ReadLine());
-           c = Convert.ToDouble(Console.ReadLine());
-           if(1 <= a && a <= 3)
+           if(a>500 && a<1000)
            {
-               Console.WriteLine(a);
+               Console.WriteLine(a*0.97);
            }
-           if(1<=b && b<=3)
+            if(a>1000)
            {
-               Console.WriteLine(b);
+               Console.WriteLine(a*0.95);
            }
-           
-           if(1<=c && c<=3)
-           {
-               Console.WriteLine(c);
-           }
-
         }
     }
 }
